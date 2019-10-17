@@ -56,7 +56,7 @@ CentOS 7及以上系统，推荐CentOS 7.4
   - 创建集群
   - 创建`register_token`
 
-#### 制作镜像
+#### 制作bcs-kube-agent镜像
 
 ```bash
 cd $GOPATH/src/bk-bcs/build/bcs.${VERSION}/bin/bcs-kube-agent
@@ -90,10 +90,10 @@ kubectl apply -f kube-agent.yaml
 
 ### bcs-k8s-watch
 
-#### 制作镜像
+#### 制作bcs-k8s-watch镜像
 
 ```bash
-cd $GOPATH/src/bk-bcs/build/bcs.${VERSION}/bin/bcs-kube-agent
+cd $GOPATH/src/bk-bcs/build/bcs.${VERSION}/bin/bcs-k8s-watch
 docker build .
 ```
 
